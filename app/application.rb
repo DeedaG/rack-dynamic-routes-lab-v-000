@@ -27,7 +27,7 @@ class Application
     req = Rack::Request.new(env)
 
 
-    if req.path.match(/search/)
+    if req.path.match(/items/<ITEM NAME>)
 
       search_term = req.params["Item Name"]
 
