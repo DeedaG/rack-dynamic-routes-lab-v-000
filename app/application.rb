@@ -8,9 +8,10 @@ class Application
 
     if req.path =="/items/"
       #resp.write @@items.price
-        item =  req.path.split("/items/"")
-      #else
-      #end
+        item =  req.path.split("/items/")
+      if
+      else
+      end
     else
       resp.write "Route not found"
       resp.status = 404
