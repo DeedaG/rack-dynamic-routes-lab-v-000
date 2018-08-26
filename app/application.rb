@@ -31,8 +31,8 @@ class Application
 
       search_term = req.params["Item Name"]
 
-      if @@items.include?(search_term)
-        resp.write "#{search_term} is one of our items"
+      if Item.include?(search_term)
+        resp.write "#{Item.search_term.price}"
       else
         resp.write "Couldn't find #{search_term}"
       end
