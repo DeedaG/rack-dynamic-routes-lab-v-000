@@ -15,7 +15,7 @@ class Application
         if item != item_name
           resp.write "Item not found"
           resp.status = 400
-        else item == item_name
+        elsif item == item_name
           resp.write item.price
 
         end
