@@ -13,6 +13,7 @@ class Application
       resp.status = 404
     end
 
+    if req.path=="/items/<ITEM NAME>"
     resp.finish
   end
 end
