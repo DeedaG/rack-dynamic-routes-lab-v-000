@@ -8,7 +8,7 @@ class Application
 
     if req.path =="/items/"
       #resp.write @@items.price
-        item =  req.path.split("/items/")
+        item =  req.path.split("/items/").last
       if
       else
       end
