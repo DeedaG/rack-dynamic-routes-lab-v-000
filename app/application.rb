@@ -11,7 +11,7 @@ class Application
         resp.write "#{item}\n"
       end
 
-    else req.path.!match(/items/<ITEM NAME>)
+    elsif req.path.!match(/items/<ITEM NAME>)
       resp.write "404"
     end
 
