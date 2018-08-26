@@ -15,6 +15,11 @@ class Application
 
     if req.path=="/items/<ITEM NAME>"
       resp.write @@items.price
+
+    else
+      resp.status = 400
+    end
+
     resp.finish
   end
 end
