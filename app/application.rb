@@ -26,11 +26,8 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    if req.path.match(/items/)
-      @@items.each do |item|
-        resp.write "#{item}\n"
-      end
-    elsif req.path.match(/search/)
+    
+    if req.path.match(/search/)
 
       search_term = req.params["q"]
 
