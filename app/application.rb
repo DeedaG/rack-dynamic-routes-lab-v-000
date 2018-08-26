@@ -10,7 +10,7 @@ class Application
         resp.write "#{price}\n"
       end
 
-    else 
+    else
       resp.write "404"
     end
 
