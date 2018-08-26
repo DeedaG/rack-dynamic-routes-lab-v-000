@@ -34,7 +34,7 @@ class Application
       if Item.include?(search_term)
         resp.write "#{Item.search_term.price}"
       else
-        resp.write "Couldn't find #{search_term}"
+        resp.write "404"
       end
 
     else
