@@ -8,7 +8,6 @@ class Application
 
     if req.path.match(/items/name:>)
         resp.write "#{price}\n"
-      end
 
     else
       resp.write "404"
