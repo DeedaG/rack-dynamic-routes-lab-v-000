@@ -11,11 +11,6 @@ class Application
         resp.write "#{item}\n"
       end
 
-    ch_term} is one of our items"
-      else
-        resp.write "Couldn't find #{search_term}"
-      end
-
     else
       resp.write "404"
     end
