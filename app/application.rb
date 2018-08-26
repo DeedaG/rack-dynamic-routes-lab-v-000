@@ -26,10 +26,10 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    
+
     if req.path.match(/search/)
 
-      search_term = req.params["q"]
+      search_term = req.params["Item Name"]
 
       if @@items.include?(search_term)
         resp.write "#{search_term} is one of our items"
