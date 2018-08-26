@@ -8,8 +8,8 @@ class Application
 
     if req.path =="/items/"
       #resp.write @@items.price
-        item_name =  req.path.split("/items/").last
-        item = @@items.find
+        item_name = req.path.split("/items/").last
+        item = @@items.find{|i| i.price == item_name}
       if
       else
       end
