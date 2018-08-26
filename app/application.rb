@@ -12,7 +12,7 @@ class Application
         item = @@items.find{|i| i.name == item_name}
 
 
-        if item_name != item
+        if item != item_name
           resp.write "Item not found"
           resp.status = 400
 
