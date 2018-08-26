@@ -6,9 +6,9 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    #if req.path =="/items/<ITEM NAME>"
+    if req.path =="/items/"
       #resp.write @@items.price
-    if req.path.match(/items/<ITEM NAME>)
+        item =  req.path.split("/items/"")
       #else
       #end
     else
